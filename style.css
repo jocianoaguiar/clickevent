@@ -1,0 +1,114 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+body{
+    background-color: rgb(3, 36, 25);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu{
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    background: rgb(77, 14, 14);
+}
+.menu-toggle-btn{
+    display: none;
+    cursor: pointer;
+    float: right;
+    font-size: 50px;
+    line-height: 100px;
+}
+.menu img{
+    height: 100px;
+    float: left;
+}
+i{
+    color: white;
+}
+.home{
+    color: red;
+}
+.meditacao{
+    color: aqua;
+}
+.noticias{
+    color: green;
+}
+.foto{
+    color: yellowgreen;
+}
+.navigation-menu{
+    float: right;
+    display: flex;
+    align-items: center;
+    line-height: 100px;
+    align-content: center;
+
+}
+.navigation-menu a{
+    display: flex;
+    line-height: 40px;
+    background-color: rgb(175, 102, 13);
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    align-items: center;
+    align-content: center;
+    transition: .3s linear;
+}
+.navigation-menu a:hover{
+    transform: scale(1.1);
+    background: rgb(5, 41, 5);
+}
+.botao{
+    width: 70px;
+    height: 20px;
+    float: left;
+    color: aqua;
+    background-color: gray;
+    transition: .3s linear;
+    margin: 10px;
+    text-align: center;
+}
+.botao:hover{
+    transform: scale(1.5);
+}
+div img{
+    float: right;
+}
+.akaza{
+    display: none;
+    height: 50vh;
+}
+.akazaon{
+    display: block;
+}
+.rengoku{
+    display: none;
+    height: 50vh;
+}
+.rengokuon{
+    display: block;
+}
+@media screen and (max-width:700px) {
+    .menu-toggle-btn{
+        display: block;
+    }
+    .navigation-menu{
+        background: rgb(51, 7, 7);
+        right: 0;
+        position: absolute;
+        top: 100px;
+        display: none;
+        flex-direction: column;
+    }
+    .navigation-menu.active{
+        display: flex !important;
+    }
+}
